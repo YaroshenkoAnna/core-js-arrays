@@ -433,8 +433,13 @@ function getFalsyValuesCount(/* arr */) {
  *                              [0,0,0,1,0],
  *                              [0,0,0,0,1]]
  */
-function getFalsyValuesCount(arr) {
-  return arr.length - arr.filter(Boolean).length;
+function getIdentityMatrix(n) {
+  const matrix = new Array(n).fill(0);
+  return matrix.map((_, index) => {
+    const arr = new Array(n).fill(0);
+    arr[index] = 1;
+    return arr;
+  });
 }
 
 /**
