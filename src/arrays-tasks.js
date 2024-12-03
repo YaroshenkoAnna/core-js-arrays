@@ -517,13 +517,13 @@ function getMaxItems(arr, n) {
  *    findCommonElements(['a', 'b', 'c'], ['b', 'c', 'd']) => [ 'b', 'c' ]
  *    findCommonElements([1, 2, 3], ['a', 'b', 'c']) => []
  */
-function findCommonElements(arr1, arr2) {
+/* function findCommonElements(arr1, arr2) {
   const newArr = arr1.map((el) => {
     if (arr2.includes(el)) return el;
     return undefined;
   });
   return newArr.filter((el) => el !== undefined);
-}
+} */
 
 /**
  * Finds the length of the longest increasing subsequence of a given array of integers.
@@ -536,7 +536,7 @@ function findCommonElements(arr1, arr2) {
  *    findLongestIncreasingSubsequence([3, 10, 2, 1, 20]) => 2
  *    findLongestIncreasingSubsequence([50, 3, 10, 7, 40, 80]) => 3
  */
-function findLongestIncreasingSubsequence(nums) {
+/* function findLongestIncreasingSubsequence(nums) {
   let counter = 1;
   const arr = nums.map((el, index) => {
     if (el < nums[index + 1]) {
@@ -548,7 +548,7 @@ function findLongestIncreasingSubsequence(nums) {
   });
   arr.sort((a, b) => b - a);
   return arr[0];
-}
+} */
 
 /**
  * Propagates every item in sequence its position times
