@@ -165,7 +165,6 @@ function isValueEqualsIndex(arr) {
   return arr.some((el, index) => el === index);
 }
 
-
 /**
  * Inserts the item into specified array at specified index.
  *
